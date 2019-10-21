@@ -1,0 +1,25 @@
+
+
+<h2 style="margin-left: 70px"> ICT Events</h2>
+<div id="fullscreen">
+  <div id="eventdetails" style="height: 580px; overflow:auto;">
+    <table id="eventtable" width='100%' cellpadding=2 cellspacing=0 >
+      <tbody>
+        <tr id="hrow" *ngIf="hasEvent">
+          <th>Description</th>
+          <th width="200px">Time</th>
+        </tr>
+        <tr *ngFor="let event of events">
+          <td> {{event.description}} </td>
+          <td> {{event.time}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="buttonlist">
+      <input type="button" id="ButtonPrevious" value="Previous" (click)="requestEvents('Previous')" disabled="disabled"> 
+      <input type="button" id="ButtonLiveView" value="Live View" (click)="restartMonitoring()" disabled="disabled"> 
+      <input type="button" id="ButtonNext" value="Next" (click)="requestEvents('Next')" disabled="disabled">
+  </div>
+</div>
+

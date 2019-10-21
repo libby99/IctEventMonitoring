@@ -1,0 +1,17 @@
+#fullscreen {
+  max-height: 100%;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: left;
+}
+
+#buttonlist {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#buttonlist input {
+  margin-left: 25px;
+  width: 100px;
+  background-color: #f0f0f0;
+}
